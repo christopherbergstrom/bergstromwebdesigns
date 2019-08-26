@@ -1,0 +1,74 @@
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+body {
+    background-color: black;
+}
+.wrapper {
+  overflow-x: hidden;
+}
+.mainColor {
+    color: #ffa500;
+}
+.menuColor {
+    color: #fff;
+}
+header {
+    background-color: #333;
+    width: 100vw;
+    font-size: 2em;
+}
+header div {
+    display: inline-block;
+}
+header a {
+    text-decoration: none;
+}
+header a:hover {
+    color: #ffa500;
+    cursor: pointer;
+}
+#menuBtn {
+    color: #d9d9d9;
+    right: 0;
+    /* height: 2em; */
+}
+#menuBtn:hover {
+    color: #ffa500;
+    cursor: pointer;
+}
+.menuItem {
+    /* display: none; */
+}
+#showcase {
+    background-image: url("../images/macPic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+}
+#overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .5;
+}
+#introText {
+    position: relative;
+    width: 60vw;
+    text-align: center;
+    padding-top: 25%;
+    margin: auto;
+    color: #fff;
+    font-size: 2em;
+}
+footer {
+    /* text-align: center; */
+    background-color: #000;
+    color: #fff;
+}
