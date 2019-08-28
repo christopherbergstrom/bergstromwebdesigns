@@ -2,7 +2,8 @@ header, section, footer, aside, nav, main, article, figure {
     display: block;
 }
 body {
-    background-color: black;
+    /* background-color: black; */
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 .wrapper {
   overflow-x: hidden;
@@ -14,26 +15,27 @@ body {
     color: #fff;
 }
 header {
-    background-color: #333;
+    background-color: #333639;
     width: 100vw;
     font-size: 2em;
-}
-header div {
-    display: inline-block;
-}
-header a {
-    text-decoration: none;
-}
-header a:hover {
-    color: #ffa500;
-    cursor: pointer;
 }
 #menuBtn {
     color: #d9d9d9;
     right: 0;
-    /* height: 2em; */
 }
 #menuBtn:hover {
+    color: #ffa500;
+    cursor: pointer;
+}
+#slideMenu {
+    /* position: relative; */
+    /* width: 100vw; */
+    background-color: #000;
+}
+#slideMenu a {
+    text-decoration: none;
+}
+#slideMenu a:hover {
     color: #ffa500;
     cursor: pointer;
 }
@@ -47,7 +49,7 @@ header a:hover {
     background-size: cover;
     width: 100vw;
     height: 100vh;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 #overlay {
     position: relative;
@@ -66,6 +68,21 @@ header a:hover {
     margin: auto;
     color: #fff;
     font-size: 2em;
+}
+#big {
+    font-size: 5em;
+}
+#about {
+    /* position: relative; */
+    width: 60vw;
+    text-align: left;
+    margin: auto;
+    padding: 32px 0px 32px 0px;
+    /* padding: 25px, 50px, 75px 100px; */
+    /* padding: 25px 50px 75px 100px; */
+}
+#about h2 {
+    text-align: center;
 }
 footer {
     /* text-align: center; */
