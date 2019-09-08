@@ -4,8 +4,9 @@ $(document).ready(() => {
     let color = changeColors();
     $("#menuBtn").css("color", color);
     // click on menuBtn while hovering changes main color and menuItem hover colors
-    $(this).click(() => {
+    $("#menuBtn").click(() => {
       $(".mainColor").css("color", color);
+      $("input[type=submit]").css("background-color", color);
       // changes menuItem color to new color
       $(".menuItem").mouseenter(function() {
         console.log($(this));
@@ -19,11 +20,11 @@ $(document).ready(() => {
       $("#menuBtn").css("color", "#d9d9d9");
     });
   });
-  $("#aboutLink").click(() => {
+  $("#aboutLink").click(() => {``
     let scrollAmount = $("#about").offset().top;
     $('html,body').animate({scrollTop: scrollAmount}, 750);
   });
-  $("#contactLink").click(() => {
+  $(".contactLink").click(() => {
     let scrollAmount = $("#contact").offset().top;
     $('html,body').animate({scrollTop: scrollAmount}, 750);
   });
@@ -35,6 +36,27 @@ $(document).ready(() => {
     let scrollAmount = $("#testimonials").offset().top;
     $('html,body').animate({scrollTop: scrollAmount}, 750);
   });
+  $(".workItemLeft").hover(function() {
+    // $("body").css("background-color", "black");
+    // console.log("here");
+    // $(this).append(`<div class="textOverlay w3-animate-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio tempora vitae molestiae, quis illum id.</div>`)
+    // css("visibility", "visible");
+    // $(this).css("display", "block");
+  });
+  let test1 = "testimonial 1";
+  let test2 = "testimonial 2";
+  let testArr = [test1, test2];
+  let count = 0;
+  setInterval(() => {
+    // $.get("../text/test1.txt", (result) => {
+    //   $("#testimonialText").html(result);
+    // });
+    $("#testimonialText").html(testArr[count]);
+    count++;
+    if (count >= testArr.length) {
+      count = 0;
+    }
+  }, 10000);
 });
 function changeColors()
 {

@@ -17,6 +17,7 @@ body {
 header {
     background-color: #333639;
     width: 100vw;
+    /* height: 9vh; */
     font-size: 2em;
 }
 #menuBtn {
@@ -30,6 +31,7 @@ header {
 #slideMenu {
     /* position: relative; */
     /* width: 100vw; */
+    /* height: 5vh; */
     background-color: #000;
 }
 #slideMenu a {
@@ -42,7 +44,7 @@ header {
 #showcase {
     /* position: relative; */
     background-image: url("../images/macPic.jpg");
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -59,13 +61,16 @@ header {
     opacity: .5;
 }
 #introText {
-    position: relative;
+    position: absolute;
     width: 60vw;
+    left: 20vw;
     text-align: center;
     margin: auto;
     padding-top: 40vh;
+    /* padding-bottom: 40vh; */
     color: #fff;
     font-size: 2em;
+    z-index: 1;
 }
 .contactLink {
     /* color: ; */
@@ -74,60 +79,128 @@ header {
     font-size: 5em;
 }
 #about {
-    /* position: relative; */
     width: 60vw;
     text-align: left;
     margin: auto;
     padding: 32px 0px 32px 0px;
-    /* padding: 25px, 50px, 75px 100px; */
-    /* padding: 25px 50px 75px 100px; */
 }
 #about h2 {
     text-align: center;
+    padding-top: 32px;
 }
 #work {
     width: 100vw;
-    /* text-align: left; */
-    /* background-image: url("../images/macPic.jpg"); */
     background-color: #f5f5f5;
 }
 #work h2 {
     text-align: center;
-    padding: 32px 0px 32px 0px;
+    padding: 32px 0px;
 }
 #work > div {
     width: 60%;
     margin: auto;
-    padding: 32px 0px 32px 0px;
+    padding: 32px 0px;
 }
 #work > div > div {
-    padding: 0px 0px 32px 0px;
+    padding-bottom: 32px;
 }
-#work div > div > div:first-child {
-    /* min-width: 200px; */
+.workItemLeft{
     width: 40%;
-    /* height: 300px; */
-    /* color: blue; */
-    text-align: center;
-    border: 1px solid blue;
+    background-color: #cccccc;
 }
-#work div > div > div:last-child {
-    /* min-width: 400px; */
+.workItemLeft > p {
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+}
+.workItemRight {
     width: 60%;
     height: 300px;
-    background-image: url("../images/macPic.jpg");
+    text-align: center;
+}
+.textOverlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #009999;
+    color: #fff;
+}
+#testimonials {
+    padding-top: 32px;
+    padding-bottom: 64px;
+}
+#testimonials h2 {
+    text-align: center;
+    padding: 32px 0px;
+}
+#testimonials > div > div {
+    width: 60vw;
+    background-color: #f5f5f5;
+    min-height: 100px;
+    /* left: 10vw; */
+    margin: auto;
+}
+#contact {
+    background-color: #f5f5f5;
+}
+#contact h2 {
+    text-align: center;
+    padding: 32px 0px;
+}
+#contact > div {
+    width: 60vw; 
+    margin: auto;
+}
+.form {
+    padding: 24px;
+}
+.form * {
+    display: block;
+    padding: 12px;
+}
+.form span {
+    display: inline;
+}
+.input {
+    width: 100%;
+}
+input[type=submit] {
+    margin-top: 12px;
+    background-color: #ffa500;
+    color: #fff;
+}
+.error {
+    color: red;
+}
+footer {
+    background-color: #000;
+    color: #fff;
+    line-height: 2em;
+}
+.wifiby {
+    background-image: url("../images/wifiby.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* color: red; */
-    text-align: center;
-    border: 1px solid red;
 }
-/* #work div:nth-child(odd) div {
-    order: 2;
-  } */
-footer {
-    /* text-align: center; */
-    background-color: #000;
-    color: #fff;
+.brandon {
+    background-image: url("../images/brandonMyers.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media only screen and (max-width:1000px) {
+    #showcase {
+        /* height: 60vh; */
+        /* background-position: right; */
+    }
+    #introText {
+        /* padding-top: 24vh; */
+    }
+    .workItem {
+        display: block !important;
+        width: 100%;
+    }
 }

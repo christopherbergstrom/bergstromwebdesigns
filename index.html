@@ -8,6 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/font.js"></script>
+  <script src="js/validate.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -18,12 +19,12 @@
     <nav id="slideMenu" class="w3-bar w3-container">
       <a id="testimonialsLink" class="w3-bar-item w3-right menuColor menuItem w3-animate-right">testimonials</a>
       <a id="workLink" class="w3-bar-item w3-right menuColor menuItem w3-animate-right">work</a>
-      <a id="contactLink" class="w3-bar-item w3-right menuColor menuItem w3-animate-right">contact</a>
+      <a id="contactLink" class="w3-bar-item w3-right menuColor menuItem w3-animate-right contactLink">contact</a>
       <a id="aboutLink" class="w3-bar-item w3-right menuColor menuItem w3-animate-right">about</a>
     </nav>
     <section id="showcase">
+      <p id="introText">Professional custom websites for your business</p>
       <div id="overlay">
-        <p id="introText">Professional custom websites for your business</p>
       </div>
     </section>
     <section id="about">
@@ -34,63 +35,53 @@
         I specialize in custom web design and responsive development. That means the website I make for your business is one of a kind and it will look great on any computer, tablet, or smartphone. 
       </p>
       <p class="aboutText">
-        Do you need a new or redesigned website? I create websites that work and get your business more customers. <a href="#" class="contactLink mainColor">Contact</a> me today for a creative solution and a quote. 
+        Do you need a new or redesigned website? I create websites that work and get your business more customers. <a href="#" class="contactLink mainColor contactLink">Contact</a> me today for a creative solution and a quote. 
       </p>
     </section>
     <section id="work">
       <div class="w3-container">
         <h2>Our Work</h2>
         <div class="w3-cell-row">
-          <div class="w3-container w3-cell w3-mobile">
-            <p>Hello</p>
+          <div class="w3-container w3-cell w3-mobile workItem workItemLeft">
+            <p>WifiBy Coachella Valley</p>
+            <!-- <div class="textOverlay w3-animate-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio tempora vitae molestiae, quis illum id.</div> -->
           </div>
-          <div class="w3-container w3-cell w3-mobile">
-            <p>Worldling hello there</p>
-          </div>
+          <a class="w3-cell w3-mobile workItem workItemRight wifiby" href="http://wifibycv.com/" target="_blank"></a>
         </div>
         <div class="w3-cell-row">
-          <div class="w3-container w3-cell w3-mobile">
-            <p>Hello</p>
+          <div class="w3-container w3-cell w3-mobile workItem workItemLeft">
+            <p>Brandon Myers Photography</p>
           </div>
-          <div class="w3-container w3-cell w3-mobile">
-            <p>Worldling hello there</p>
-          </div>
-        </div>
-        <div class="w3-cell-row">
-          <div class="w3-container w3-cell w3-mobile">
-            <p>Hello</p>
-          </div>
-          <div class="w3-container w3-cell w3-mobile">
-            <p>Worldling hello there</p>
-          </div>
-        </div>
-        <div class="w3-cell-row">
-          <div class="w3-container w3-cell w3-mobile">
-            <p>Hello</p>
-          </div>
-          <div class="w3-container w3-cell w3-mobile">
-            <p>Worldling hello there</p>
-          </div>
+          <a class="w3-cell w3-mobile workItem workItemRight brandon" href="http://brandonmyersphotography.com/" target="_blank"></a>
         </div>
       </div>
-        <!-- 2 x 2 grid of previous work -->
-      </section>
+    </section>
     <section id="testimonials">
-      <h3>Testimonials from satisfied clients</h3>
-      <p>
-        <!-- testimonials here -->
-      </p>
+      <div class="w3-container">
+        <h2>Testimonials</h2>
+        <div class="w3-container">
+          <p id="testimonialText">test 0</p>
+        </div>
+      </div>
     </section>
     <section id="contact">
-      <!-- message box, name, email, send box -->
+      <h2>Contact Us</h2>
+      <div class="w3-container">
+        <form method="POST" action="php/mail.php" class="form">
+          <label>Name <span id="nameError" class="error"></span></label>
+          <input type="text" id="name" name="name" placeholder="Your name" class="input">
+          <label>Email <span id="emailError" class="error"></span></label>
+          <input type="email" id="email" name="email" placeholder="youremail@gmail.com" class="input">
+          <label>Message <span id="messageError" class="error"></span></label>
+          <textarea id="message" name="message" placeholder="Type message..." style="height:200px" class="input"></textarea>
+          <input type="submit" value="Send" class="w3-round" id="submitBtn">
+        </form>
+      </div>
     </section>
     <footer class="w3-bar">
       <div class="w3-bar-item">Created by <a href="http://bergstromwebdesigns.com">Bergstrom <span class="mainColor">Web Designs</span></a></div>
       <div class="w3-bar-item"><a href="mailto:bergstromwebdesigns@gmail.com">bergstromwebdesigns@gmail.com</a></div>
-      <!-- <div class="w3-bar-item"></div> -->
-      <!-- <div class="w3-bar-item"></div> -->
     </footer>
-
   </div>
 </body>
 </html>
