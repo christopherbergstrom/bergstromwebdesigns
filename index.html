@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bergstrom Web Designs</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/w3.css">
@@ -14,13 +16,13 @@
   <div class="wrapper">
     <header class="w3-bar w3-container">
       <div class="w3-bar-item w3-animate-left"><span class="menuColor">Bergstrom</span> <span class="mainColor">Web Designs</span></div>
-      <div class="w3-bar-item w3-right" id="menuBtn"><i class="far fa-circle"></i></div>
+      <!-- <div class="w3-bar-item w3-right" id="menuBtn"><i class="far fa-circle"></i></div> -->
     </header>
-    <nav id="slideMenu" class="w3-bar w3-container">
-      <a id="testimonialsLink" class="w3-bar-item w3-right menuColor menuItem w3-animate-right">testimonials</a>
-      <a id="workLink" class="w3-bar-item w3-right menuColor menuItem w3-animate-right">work</a>
-      <a id="contactLink" class="w3-bar-item w3-right menuColor menuItem w3-animate-right contactLink">contact</a>
-      <a id="aboutLink" class="w3-bar-item w3-right menuColor menuItem w3-animate-right">about</a>
+    <nav id="slideMenu" class="w3-bar">
+      <a id="testimonialsLink" class="w3-right w3-bar-item menuColor menuItem w3-animate-right">testimonials</a>
+      <a id="workLink" class="w3-right w3-bar-item menuColor menuItem w3-animate-right">work</a>
+      <a id="contactLink" class="w3-right w3-bar-item menuColor menuItem w3-animate-right contactLink">contact</a>
+      <a id="aboutLink" class="w3-right w3-bar-item menuColor menuItem w3-animate-right">about</a>
     </nav>
     <section id="showcase">
       <p id="introText">Professional custom websites for your business</p>
@@ -41,32 +43,43 @@
     <section id="work">
       <div class="w3-container">
         <h2>Our Work</h2>
-        <div class="w3-cell-row">
-          <div class="w3-container w3-cell w3-mobile workItem workItemLeft">
+        <div class="w3-row">
+          <div class="w3-container w3-third workItem ">
             <p>WifiBy Coachella Valley</p>
             <!-- <div class="textOverlay w3-animate-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio tempora vitae molestiae, quis illum id.</div> -->
           </div>
-          <a class="w3-cell w3-mobile workItem workItemRight wifiby" href="http://wifibycv.com/" target="_blank"></a>
+          <a class="w3-twothird workItem wifiby" href="http://wifibycv.com/" target="_blank"></a>
         </div>
-        <div class="w3-cell-row">
-          <div class="w3-container w3-cell w3-mobile workItem workItemLeft">
+        <div class="w3-row">
+          <div class="w3-container w3-third workItem">
             <p>Brandon Myers Photography</p>
           </div>
-          <a class="w3-cell w3-mobile workItem workItemRight brandon" href="http://brandonmyersphotography.com/" target="_blank"></a>
+          <a class="w3-twothird workItem brandon" href="http://brandonmyersphotography.com/" target="_blank"></a>
         </div>
       </div>
     </section>
     <section id="testimonials">
       <div class="w3-container">
         <h2>Testimonials</h2>
-        <div class="w3-container">
-          <p id="testimonialText">test 0</p>
+        <div class="w3-row-padding">
+          <div class="w3-padding-large">
+            <img src="images/me.jpg" alt="me1" class="w3-circle">
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eveniet!</p>
+          </div>
+          <div class="w3-padding-large">
+            <img src="images/me.jpg" alt="me1" class="w3-circle">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, in? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, autem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, dolor?</p> 
+          </div>
+          <div class="w3-padding-large">
+            <img src="images/me.jpg" alt="me1" class="w3-circle">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, ipsam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, asperiores! Lorem ipsum dolor sit amet.</p>
+          </div>
         </div>
       </div>
     </section>
     <section id="contact">
-      <h2>Contact Us</h2>
       <div class="w3-container">
+        <h2>Contact Us</h2>
         <form method="POST" action="php/mail.php" class="form">
           <label>Name <span id="nameError" class="error"></span></label>
           <input type="text" id="name" name="name" placeholder="Your name" class="input">
