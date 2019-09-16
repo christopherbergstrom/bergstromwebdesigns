@@ -106,7 +106,7 @@ header {
     text-align: right;
 }
 .workItem:nth-child(2) {
-    min-height: calc(100vh / 3);
+    height: calc(20vw);
 }
 .textOverlay {
     position: relative;
@@ -130,7 +130,6 @@ header {
 #testimonials .w3-row-padding {
     column-count: 3;
     /* min-height: calc(100vh / 3); */
-
 }
 #testimonials .w3-padding-large {
     /* position: relative; */
@@ -200,6 +199,9 @@ footer {
     #testimonials .w3-row-padding {
         column-count: 2;
     }
+    .workItem:nth-child(1) {
+        text-align: center;
+    }
 }
 @media only screen and (max-width: 600px) {
     #work .w3-row {
@@ -208,6 +210,9 @@ footer {
     }
     #testimonials .w3-row-padding {
         column-count: 1;
+    }
+    .workItem:nth-child(2) {
+        height: calc(30vw);
     }
 }
 @media only screen and (max-width: 480px) {
