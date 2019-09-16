@@ -212,7 +212,7 @@ footer {
         column-count: 1;
     }
     .workItem:nth-child(2) {
-        height: calc(30vw);
+        height: 30vw;
     }
 }
 @media only screen and (max-width: 480px) {
