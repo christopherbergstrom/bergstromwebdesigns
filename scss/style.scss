@@ -8,23 +8,20 @@ article,
 figure {
 	display: block;
 }
-$mainColor: #ffa500;
+// $mainColor: #ffa500;
+$mainColor: #4bb051;
+
 body {
 	/* background-color: black; */
-	/* font-family: Arial, Helvetica, sans-serif; */
+	font-family: Arial, Helvetica, sans-serif;
+	// max-width: 1440px;
+	// margin: auto !important;
 }
 .wrapper {
 	overflow-x: hidden;
-	header {
-		// height: 7%;
-		background-color: #333639;
-		width: 100vw;
-		/* height: 9vh; */
-		font-size: 2em;
-	}
-	nav {
-		// height: 3%;
-	}
+}
+header {
+	background-color: #333639;
 }
 .mainColor {
 	color: $mainColor;
@@ -32,35 +29,34 @@ body {
 .menuColor {
 	color: #fff;
 }
-#menuBtn {
-	color: #d9d9d9;
-	right: 0;
+nav {
+	text-align: center;
+	@media only screen and (min-width: 601px) {
+		text-align: left;
+		display: flex !important;
+	}
 }
-#menuBtn:hover {
-	color: $mainColor;
-	cursor: pointer;
+nav > div:nth-child(3) {
+	align-self: center !important;
 }
-#slideMenu {
-	background-color: #000;
-	overflow: auto;
+.nav-item {
+	padding: 0 5px;
 }
-#slideMenu a {
-	text-decoration: none;
-	padding: 14px 16px;
-}
-#slideMenu a:hover {
+.nav-item:hover {
 	color: $mainColor;
 	cursor: pointer;
 }
 #showcase {
-	background-image: url("../images/macPic.jpg");
+	min-height: 50vh;
+	height: 100%;
+	background-image: url("../images/macPic2.jpg");
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 100vw;
-	/* min-height: calc(100vh - 111px); */
-	height: 100vh;
-	/* background-attachment: fixed; */
+	// background-attachment: fixed;
+}
+#showcase div {
+	width: 70%;
 }
 #overlay {
 	position: relative;
@@ -68,21 +64,9 @@ body {
 	left: 0;
 	width: 100%;
 	/* min-height: calc(100vh - 111px); */
-	height: 100vh;
+	height: 90vh;
 	background-color: #000;
 	opacity: 0.3;
-}
-#introText {
-	position: absolute;
-	width: 60vw;
-	left: 20vw;
-	text-align: center;
-	margin: auto;
-	padding-top: 40vh;
-	/* padding-bottom: 40vh; */
-	color: #fff;
-	font-size: 2em;
-	z-index: 1;
 }
 #big {
 	font-size: 5em;
@@ -212,15 +196,7 @@ footer {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-@media only screen and (max-width: 768px) {
-	#testimonials .w3-row-padding {
-		column-count: 2;
-	}
-	.workItem:nth-child(1) {
-		/* text-align: center; */
-	}
-}
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
 	#work .w3-row {
 		border-left: none;
 		border-top: 1px solid #333;
@@ -232,5 +208,13 @@ footer {
 		height: 30vw;
 	}
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
+	#testimonials .w3-row-padding {
+		column-count: 2;
+	}
+	.workItem:nth-child(1) {
+		/* text-align: center; */
+	}
+}
+@media only screen and (max-width: 1024px) {
 }
