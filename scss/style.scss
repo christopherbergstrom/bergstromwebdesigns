@@ -8,12 +8,12 @@ article,
 figure {
 	display: block;
 }
-// $mainColor: #ffa500;
-$mainColor: #4bb051;
+$mainColor: #9e9e9e;
+// $mainColor: #4bb051;
 
-body {
+* {
 	/* background-color: black; */
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Maven Pro", Arial, Helvetica, sans-serif !important;
 	// max-width: 1440px;
 	// margin: auto !important;
 }
@@ -21,13 +21,13 @@ body {
 	overflow-x: hidden;
 }
 header {
-	background-color: #333639;
+	// background-color: #818181;
 }
 .mainColor {
 	color: $mainColor;
 }
 .menuColor {
-	color: #fff;
+	color: #000;
 }
 nav {
 	text-align: center;
@@ -49,17 +49,21 @@ nav > div:nth-child(3) {
 #showcase {
 	min-height: 50vh;
 	height: 100%;
-	background-image: url("../images/macPic2.jpg");
+	background-image: url("../images/macPic5.jpg");
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size: cover;
 	// background-attachment: fixed;
 }
 #showcase div {
-	width: 70%;
+	// width: 70%;
+}
+.background {
+	width: 100%;
+	height: 100%;
 }
 #overlay {
-	position: relative;
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -68,8 +72,13 @@ nav > div:nth-child(3) {
 	background-color: #000;
 	opacity: 0.3;
 }
-#big {
-	font-size: 5em;
+.title {
+	text-align: center;
+	padding-bottom: 32px;
+}
+.w3-section {
+	// margin: 3rem auto !important;
+	min-height: 50vh;
 }
 #about {
 	width: 60vw;
@@ -84,18 +93,22 @@ nav > div:nth-child(3) {
 	width: 100vw;
 	background-color: #f5f5f5;
 }
-#work h2 {
-	text-align: center;
-	padding-bottom: 32px;
+#work a {
+	text-decoration: none;
+	display: block;
+	img {
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
 }
 /* container */
 #work > div {
-	width: 60%;
+	width: 80%;
 	margin: auto;
 	padding: 32px 0px;
 }
 #work .w3-row {
-	border-left: 1px solid #333;
 	margin-bottom: 32px;
 }
 .workItem:nth-child(1) {
@@ -119,34 +132,18 @@ nav > div:nth-child(3) {
 	width: 80vw;
 	margin: auto;
 	padding: 32px 0px;
-}
-#testimonials h2 {
-	text-align: center;
-	padding-bottom: 32px;
-}
-#testimonials .w3-row-padding {
-	column-count: 3;
-	/* min-height: calc(100vh / 3); */
-}
-#testimonials .w3-padding-large {
-	/* position: relative; */
-	/* display: block; */
-	text-align: center;
-	break-inside: avoid;
-	/* box-sizing: border-box; */
-}
-#testimonials img {
-	width: 80px;
-}
-#testimonials p {
-	text-align: left;
+	.w3-third {
+		text-align: center;
+		img {
+			width: 80px;
+		}
+		p {
+			text-align: left;
+		}
+	}
 }
 #contact {
 	background-color: #f5f5f5;
-}
-#contact h2 {
-	text-align: center;
-	padding-bottom: 32px;
 }
 /* container */
 #contact > div {
@@ -183,38 +180,4 @@ footer {
 	background-color: #000;
 	color: #fff;
 	line-height: 2em;
-}
-.wifiby {
-	background-image: url("../images/wifiby.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.brandon {
-	background-image: url("../images/brandonMyers.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-@media only screen and (max-width: 640px) {
-	#work .w3-row {
-		border-left: none;
-		border-top: 1px solid #333;
-	}
-	#testimonials .w3-row-padding {
-		column-count: 1;
-	}
-	.workItem:nth-child(2) {
-		height: 30vw;
-	}
-}
-@media only screen and (max-width: 768px) {
-	#testimonials .w3-row-padding {
-		column-count: 2;
-	}
-	.workItem:nth-child(1) {
-		/* text-align: center; */
-	}
-}
-@media only screen and (max-width: 1024px) {
 }

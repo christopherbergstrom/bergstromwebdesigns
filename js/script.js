@@ -24,7 +24,7 @@ $(document).ready(() => {
 	//     $("#menuBtn").css("color", "#d9d9d9");
 	//   });
 	// });
-	$("#aboutLink").click(() => {
+	$(".aboutLink").click(() => {
 		let scrollAmount = $("#about").offset().top;
 		$("html,body").animate({ scrollTop: scrollAmount }, 750);
 	});
@@ -32,11 +32,11 @@ $(document).ready(() => {
 		let scrollAmount = $("#contact").offset().top;
 		$("html,body").animate({ scrollTop: scrollAmount }, 750);
 	});
-	$("#workLink").click(() => {
+	$(".workLink").click(() => {
 		let scrollAmount = $("#work").offset().top;
 		$("html,body").animate({ scrollTop: scrollAmount }, 750);
 	});
-	$("#testimonialsLink").click(() => {
+	$(".testimonialsLink").click(() => {
 		let scrollAmount = $("#testimonials").offset().top;
 		$("html,body").animate({ scrollTop: scrollAmount }, 750);
 	});
@@ -61,5 +61,6 @@ function resize() {
 	let height1 = $(window).height();
 	let height2 = $("#header").outerHeight();
 	let height3 = height1 - height2;
+
 	$("#showcase").css("height", height3 + "px");
 }
