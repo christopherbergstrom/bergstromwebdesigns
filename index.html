@@ -45,35 +45,59 @@
 					<!-- <div class="overlay"></div> -->
 				</div>
 			</section>
-			<section id="about" class="w3-section">
+			<!-- About -->
+			<section id="about" class="w3-section half">
 				<h2 class="">About</h2>
 				<p class="w3-large"><span class="w3-jumbo">H</span>i, thank you for visiting Bergstrom Web Designs. My name is Christopher Bergstrom and I am the owner of Bergstrom Web Designs. I have been a freelance web developer for years, and decided to start a business for it. I specialize in custom web design and responsive development. That means the website I make for your business is one of a kind and it will look great on any computer, tablet, or smartphone.</p>
 				<p class="w3-large">Do you need a new or redesigned website? I create websites that work and get your business more customers. <a href="#" class="contactLink mainColor contactLink">Contact</a> me today for a creative solution and a quote.</p>
 			</section>
-			<section id="work" class="w3-section">
+			<!-- Work -->
+			<section id="work" class="w3-section half">
 				<div class="w3-container">
 					<h2 class="title">Work</h2>
-					<div class="w3-row">
-						<div class="w3-half">
-							<a href="http://wifibycv.com/" target="_blank" class="w3-display-container w3-hover-opacity-off">
-								<img src="images/wifiby.png" alt="WifiBy Coachella Valley" />
-								<div class="w3-display-middle w3-large w3-display-hover">
-									<button class="w3-btn w3-white w3-animate-opacity">WifiBy Coachella Valley</button>
-								</div>
+					<div class="w3-content w3-display-container">
+						<div class="workSlides">
+							<div class="w3-center w3-xlarge w3-card-4 w3-container w3-padding-16 w3-white">WifiBy Coachella Valley</div>
+							<a href="http://wifibycv.com/" target="_blank">
+								<img src="images/wifiby.png" title="WifiBy Coachella Valley" alt="WifiBy Coachella Valley" />
 							</a>
 						</div>
-						<div class="w3-half">
-							<a href="http://brandonmyersphotography.com//" target="_blank" class="w3-display-container w3-hover-opacity-off">
-								<img src="images/brandonMyers.png" alt="Brandon Myers Photography" />
-								<div class="w3-display-middle w3-large w3-display-hover">
-									<button class="w3-btn w3-white w3-animate-opacity">Brandon Myers Photography</button>
-								</div>
+						<div class="workSlides">
+							<div class="w3-center w3-xlarge w3-card-4 w3-container w3-padding-16 w3-white">Brandon Myers Photography</div>
+							<a href="http://brandonmyersphotography.com/" target="_blank">
+								<img src="images/brandonMyers.png" title="Brandon Myers Photography" alt="Brandon Myers Photography" />
 							</a>
 						</div>
+						<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+						<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
 					</div>
+					<!-- Slideshow script -->
+					<script>
+						var slideIndex = 1;
+						showDivs(slideIndex);
+
+						function plusDivs(n) {
+							showDivs((slideIndex += n));
+						}
+
+						function showDivs(n) {
+							var i;
+							var x = document.getElementsByClassName("workSlides");
+							if (n > x.length) {
+								slideIndex = 1;
+							}
+							if (n < 1) {
+								slideIndex = x.length;
+							}
+							for (i = 0; i < x.length; i++) {
+								x[i].style.display = "none";
+							}
+							x[slideIndex - 1].style.display = "block";
+						}
+					</script>
 				</div>
 			</section>
-			<section id="testimonials" class="w3-section">
+			<!-- <section id="testimonials" class="w3-section half">
 				<div class="w3-container">
 					<h2 class="title">Testimonials</h2>
 					<div class="w3-row-padding">
@@ -97,13 +121,15 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 			<section id="contact" class="">
 				<div class="w3-container">
 					<h2 class="title">Contact</h2>
 					<form method="POST" action="php/mail.php" class="form">
 						<label>Name <span id="nameError" class="error"></span></label>
 						<input type="text" id="name" name="name" placeholder="Your name" class="input" />
+						<label class="w3-hide">Comments <span id="commentsError" class="error"></span></label>
+						<input type="text" id="comments" name="comments" placeholder="Comments" class="input w3-input w3-border w3-hide" />
 						<label>Email <span id="emailError" class="error"></span></label>
 						<input type="email" id="email" name="email" placeholder="youremail@gmail.com" class="input" />
 						<label>Message <span id="messageError" class="error"></span></label>
