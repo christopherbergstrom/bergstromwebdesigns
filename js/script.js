@@ -1,29 +1,13 @@
-$(document).ready(() => {
+$(window).on("load", () => {
 	resize();
 	$(window).resize(() => {
 		resize();
 	});
-	// mouse enters, menuBtn circle changes to random color
-	// $("#menuBtn").mouseenter(() => {
-	//   let color = changeColors();
-	//   $("#menuBtn").css("color", color);
-	//   // click on menuBtn while hovering changes main color and menuItem hover colors
-	//   $("#menuBtn").click(() => {
-	//     $(".mainColor").css("color", color);
-	//     $("input[type=submit]").css("background-color", color);
-	//     // changes menuItem color to new color
-	//     $(".menuItem").mouseenter(function() {
-	//       console.log($(this));
-	//       $(this).css("color", color);
-	//     // changes menuItem back to normal color
-	//     }).mouseleave(function() {
-	//       $(this).css("color", "#fff");
-	//     });
-	//   // changes menuBtn back to normal color
-	//   }).mouseleave(() => {
-	//     $("#menuBtn").css("color", "#d9d9d9");
-	//   });
-	// });
+	let replaceArr1 = document.getElementsByClassName("fotorama__caption");
+	let replaceArr2 = document.getElementsByClassName("fotorama__caption__wrap");
+	for (let i = 0; i < replaceArr2.length; i++) {
+		replaceArr1[i].innerHTML = "<a class='fotorama__caption__wrap' target='_blank' href=" + replaceArr2[i].innerHTML + ">" + replaceArr2[i].innerHTML + "</a>";
+	}
 	$(".aboutLink").click(() => {
 		let scrollAmount = $("#about").offset().top;
 		$("html,body").animate({ scrollTop: scrollAmount }, 750);
@@ -40,7 +24,7 @@ $(document).ready(() => {
 		let scrollAmount = $("#testimonials").offset().top;
 		$("html,body").animate({ scrollTop: scrollAmount }, 750);
 	});
-	$(".workItem:nth-child(1)").hover(function() {
+	$(".workItem:nth-child(1)").hover(function () {
 		// $("body").css("background-color", "black");
 		// console.log("here");
 		// $(this).append(`<div class="textOverlay w3-animate-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio tempora vitae molestiae, quis illum id.</div>`)
