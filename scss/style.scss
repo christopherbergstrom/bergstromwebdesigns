@@ -24,10 +24,13 @@ $mainColor: #949599;
 header  {
 	nav {
 		// background-color: #818181;
-		background-color: rgba(255, 255, 255, .2);
+		background-color: rgba(0, 0, 0, .2);
 		border-bottom: 1px solid #fff !important;
 		a {
 			color: #fff !important;
+		}
+		.mobile-menu a {
+			color: unset !important;
 		}
 	}
 
@@ -194,7 +197,7 @@ input[type="submit"] {
 	// }
 }
 .error {
-	// color: red;
+	color: #ef516d;
 }
 footer {
 	// background-color: #000;
