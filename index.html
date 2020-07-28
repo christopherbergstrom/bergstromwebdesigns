@@ -10,143 +10,147 @@
 	<meta name="keywords" content="custom,website,web developer,web design,design,freelancer,talent,business,solution" />
 	<meta name="author" content="Christopher Bergstrom" />
 	<title>Bergstrom Web Designs</title>
-	<link rel="stylesheet" href="css/w3.css" />
+	<!-- <link rel="stylesheet" href="css/w3.css" /> -->
 	<link rel="stylesheet" href="css/app.css" />
 	<link href="https://fonts.googleapis.com/css?family=Maven+Pro|Spartan&display=swap" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<!-- Fotorama from CDNJS, 19 KB -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-	<script src="js/script.js"></script>
-	<script src="js/font.js"></script>
-	<script src="js/validate.js"></script>
+	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet" /> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> -->
+
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/css/uikit.min.css" />
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit-icons.min.js"></script>
+
+	<!-- <script src="js/script.js"></script> -->
+	<!-- <script src="js/font.js"></script> -->
+	<!-- <script src="js/validate.js"></script> -->
 </head>
 
-<body>
-	<div class="wrapper">
-		<header id="header">
-			<nav class="w3-row w3-container w3-white">
-				<div class="w3-half w3-xxlarge w3-padding-large"><span class="menuColor">Bergstrom</span> <span
-						class="mainColor">Web&nbsp;Designs</span></div>
-				<div class="w3-hide-large w3-hide-medium w3-half w3-padding-16 w3-cell-row">
-					<a id="aboutLink" class="nav-item w3-padding-small w3-cell menuColor aboutLink">about</a>
-					<a id="workLink" class="nav-item w3-padding-small w3-cell menuColor workLink">work</a>
-					<!-- <a id="testimonialsLink" class="nav-item w3-padding-small w3-cell menuColor testimonialsLink">testimonials</a> -->
-					<a id="contactLink" class="nav-item w3-padding-small w3-cell menuColor contactLink">contact</a>
-				</div>
-				<div class="w3-hide-small w3-half w3-bar w3-padding-large">
-					<div class="w3-right">
-						<a id="aboutLink" class="nav-item w3-bar-item menuColor menuItem aboutLink">about</a>
-						<a id="workLink" class="nav-item w3-bar-item menuColor menuItem workLink">work</a>
-						<!-- <a id="testimonialsLink" class="nav-item w3-bar-item menuColor menuItem testimonialsLink">testimonials</a> -->
-						<a id="contactLink" class="nav-item w3-bar-item menuColor menuItem contactLink">contact</a>
-					</div>
-				</div>
-			</nav>
-		</header>
-		<section>
-			<div id="showcase" class="w3-display-container">
-				<!-- <img class="background" src="images/macPic3.jpg" alt="" /> -->
-				<div class="w3-display-middle w3-xlarge w3-text-white w3-center">Professional custom websites for your business
-				</div>
-				<!-- <div class="overlay"></div> -->
+<body class="">
+	<header id="header" class="showcase uk-background-cover uk-background-norepeat uk-background-center-right">
+		<!-- <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"> -->
+		<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+			<div class="uk-navbar-left">
+				<ul class="uk-navbar-nav">
+					<a href="/" class="uk-navbar-item uk-logo">Bergstrom Web&nbsp;Designs</a>
+				</ul>
 			</div>
-		</section>
-		<!-- About -->
-		<section id="about" class="w3-section half">
-			<h2 class="">About</h2>
-			<p class="w3-large"><span class="w3-jumbo">H</span>i, thank you for visiting Bergstrom Web Designs. My name is
-				Christopher Bergstrom and I am the owner of Bergstrom Web Designs. I have been a freelance web developer for
-				years, and decided to start a business for it. I specialize in custom web design and responsive development.
-				That means the website I make for your business is one of a kind and it will look great on any computer, tablet,
-				or smartphone.</p>
-			<p class="w3-large">Do you need a new or redesigned website? I create websites that work and get your business
-				more customers. <a href="#" class="contactLink mainColor contactLink">Contact</a> me today for a creative
-				solution and a quote.</p>
-		</section>
-		<!-- Work -->
-		<section id="work" class="w3-section half">
-			<div class="w3-container">
-				<h2 class="title">Work</h2>
-				<div class="w3-content w3-display-container">
-					<!-- Add images to <div class="fotorama"></div> -->
-					<div class="fotorama" data-nav="thumbs">
-						<img src="images/wifiby.png" title="WifiBy Coachella Valley" alt="WifiBy Coachella Valley"
-							data-caption="http://wifibycv.com" />
-						<img src="images/brandonMyers.png" title="Brandon Myers Photography" alt="Brandon Myers Photography"
-							data-caption="http://brandonmyersphotography.com" />
-					</div>
-					<!-- <div class="workSlides">
-							<div class="w3-center w3-xlarge w3-card-4 w3-container w3-padding-16 w3-white">WifiBy Coachella Valley</div>
-							<a href="http://wifibycv.com/" target="_blank">
-								<img src="images/wifiby.png" title="WifiBy Coachella Valley" alt="WifiBy Coachella Valley" />
-							</a>
-						</div>
-						<div class="workSlides">
-							<div class="w3-center w3-xlarge w3-card-4 w3-container w3-padding-16 w3-white">Brandon Myers Photography</div>
-							<a href="http://brandonmyersphotography.com/" target="_blank">
-								<img src="images/brandonMyers.png" title="Brandon Myers Photography" alt="Brandon Myers Photography" />
-							</a>
-						</div>
-						<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-						<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button> -->
-				</div>
+			<div class="uk-navbar-right">
+				<ul class="uk-navbar-nav">
+					<li><a id="aboutLink" class="nav-item w3-padding-small w3-cell menuColor aboutLink">about</a></li>
+					<li><a id="workLink" class="nav-item w3-padding-small w3-cell menuColor workLink">work</a></li>
+					<!-- <li><a id="testimonialsLink" class="nav-item w3-padding-small w3-cell menuColor testimonialsLink">testimonials</a></li> -->
+					<li><a id="contactLink" class="nav-item w3-padding-small w3-cell menuColor contactLink">contact</a></li>
+				</ul>
 			</div>
-		</section>
-		<!-- <section id="testimonials" class="w3-section half">
-				<div class="w3-container">
-					<h2 class="title">Testimonials</h2>
-					<div class="w3-row-padding">
-						<div class="w3-padding-large w3-third">
-							<img src="images/me.jpg" alt="me1" class="w3-circle" />
-							<p class="">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eveniet!
-							</p>
-						</div>
-						<div class="w3-padding-large w3-third">
-							<img src="images/me.jpg" alt="me1" class="w3-circle" />
-							<p>
-								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, in? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, autem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, dolor?
-							</p>
-						</div>
-						<div class="w3-padding-large w3-third">
-							<img src="images/me.jpg" alt="me1" class="w3-circle" />
-							<p>
-								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, ipsam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, asperiores! Lorem ipsum dolor sit amet.
-							</p>
-						</div>
-					</div>
-				</div>
-			</section> -->
-		<section id="contact" class="">
-			<div class="w3-container">
-				<h2 class="title">Contact</h2>
-				<form method="POST" action="php/mail.php" class="form">
-					<label>Name <span id="nameError" class="error"></span></label>
-					<input type="text" id="name" name="name" placeholder="Your name" class="input" />
-					<label class="w3-hide">Comments <span id="commentsError" class="error"></span></label>
-					<input type="text" id="comments" name="comments" placeholder="Comments"
-						class="input w3-input w3-border w3-hide" />
-					<label>Email <span id="emailError" class="error"></span></label>
-					<input type="email" id="email" name="email" placeholder="youremail@gmail.com" class="input" />
-					<label>Message <span id="messageError" class="error"></span></label>
-					<textarea id="message" name="message" placeholder="Type message..." style="height: 200px;"
-						class="input"></textarea>
-					<input type="submit" value="Send" class="w3-round" id="submitBtn" />
-				</form>
-			</div>
-		</section>
-		<footer class="w3-bar">
-			<div class="w3-bar-item">
-				Created by
-				<a href="http://bergstromwebdesigns.com">Bergstrom <span class="mainColor">Web Designs</span></a>
-			</div>
-			<div class="w3-bar-item">
-				<a href="mailto:chris@bergstromwebdesigns.com">chris@bergstromwebdesigns.com</a>
-			</div>
-		</footer>
+		</nav>
+		<!-- </div> -->
+		<div class="uk-flex uk-flex-center uk-flex-middle" uk-height-viewport="offset-top:true">
+			<h3 class="">Professional custom websites for your business</h3>
+		</div>
+	</header>
+	<!-- About -->
+	<div id="about" class="uk-section">
+		<h2 class="">About</h2>
+		<p class="w3-large"><span class="w3-jumbo">H</span>i, thank you for visiting Bergstrom Web Designs. My name is
+			Christopher Bergstrom and I am the owner of Bergstrom Web Designs. I specialize in custom web design and
+			responsive development.
+			That means the website I make for your business is one of a kind and it will look great on any desktop, tablet,
+			or smartphone.</p>
+		<p class="w3-large">Do you need a new or redesigned website? I create websites that work and get your business
+			more customers. <a href="#" class="contactLink mainColor contactLink">Contact</a> me today for a creative
+			solution and a quote.</p>
 	</div>
+	<!-- Work -->
+	<section id="work" class="w3-section half">
+		<div class="w3-container">
+			<h2 class="title">Work</h2>
+			<div class="w3-content w3-display-container">
+				<!-- Add images to <div class="fotorama"></div> -->
+				<div class="fotorama" data-nav="thumbs">
+					<img src="images/wifiby.png" title="WifiBy Coachella Valley" alt="WifiBy Coachella Valley"
+						data-caption="http://wifibycv.com" />
+					<img src="images/brandonMyers.png" title="Brandon Myers Photography" alt="Brandon Myers Photography"
+						data-caption="http://brandonmyersphotography.com" />
+				</div>
+				<!-- <div class="workSlides">
+						<div class="w3-center w3-xlarge w3-card-4 w3-container w3-padding-16 w3-white">WifiBy Coachella Valley</div>
+						<a href="http://wifibycv.com/" target="_blank">
+							<img src="images/wifiby.png" title="WifiBy Coachella Valley" alt="WifiBy Coachella Valley" />
+						</a>
+					</div>
+					<div class="workSlides">
+						<div class="w3-center w3-xlarge w3-card-4 w3-container w3-padding-16 w3-white">Brandon Myers Photography</div>
+						<a href="http://brandonmyersphotography.com/" target="_blank">
+							<img src="images/brandonMyers.png" title="Brandon Myers Photography" alt="Brandon Myers Photography" />
+						</a>
+					</div>
+					<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+					<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button> -->
+			</div>
+		</div>
+	</section>
+	<!-- <section id="testimonials" class="w3-section half">
+			<div class="w3-container">
+				<h2 class="title">Testimonials</h2>
+				<div class="w3-row-padding">
+					<div class="w3-padding-large w3-third">
+						<img src="images/me.jpg" alt="me1" class="w3-circle" />
+						<p class="">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eveniet!
+						</p>
+					</div>
+					<div class="w3-padding-large w3-third">
+						<img src="images/me.jpg" alt="me1" class="w3-circle" />
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, in? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, autem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, dolor?
+						</p>
+					</div>
+					<div class="w3-padding-large w3-third">
+						<img src="images/me.jpg" alt="me1" class="w3-circle" />
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, ipsam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, asperiores! Lorem ipsum dolor sit amet.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section> -->
+	<section id="contact" class="">
+		<div class="w3-container">
+			<h2 class="title">Contact</h2>
+			<form method="POST" action="php/mail.php" class="form">
+				<label>Name <span id="nameError" class="error"></span></label>
+				<input type="text" id="name" name="name" placeholder="Your name" class="input" />
+				<label class="w3-hide">Comments <span id="commentsError" class="error"></span></label>
+				<input type="text" id="comments" name="comments" placeholder="Comments"
+					class="input w3-input w3-border w3-hide" />
+				<label>Email <span id="emailError" class="error"></span></label>
+				<input type="email" id="email" name="email" placeholder="youremail@gmail.com" class="input" />
+				<label>Message <span id="messageError" class="error"></span></label>
+				<textarea id="message" name="message" placeholder="Type message..." style="height: 200px;"
+					class="input"></textarea>
+				<input type="submit" value="Send" class="w3-round" id="submitBtn" />
+			</form>
+		</div>
+	</section>
+	<footer id="footer" class="uk-background-secondary uk-light">
+		<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+			<div class="uk-navbar-left">
+				<ul class="uk-navbar-nav">
+					<div class="uk-navbar-item">
+						<div>Created by <a href="/">Bergstrom Web Designs</a></div>
+					</div>
+					<div class="uk-navbar-item">
+						<div><a href="mailto:chris@bergstromwebdesigns.com">chris@bergstromwebdesigns.com</a></div>
+					</div>
+				</ul>
+			</div>
+		</nav>
+	</footer>
 </body>
 
 </html>
