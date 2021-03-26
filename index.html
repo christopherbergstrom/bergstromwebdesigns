@@ -43,6 +43,7 @@
 				<ul class="uk-navbar-nav uk-visible@m">
 					<li><a href="#about" uk-scroll>about</a></li>
 					<li><a href="#work" uk-scroll>work</a></li>
+					<li><a href="#testimonials" uk-scroll>testimonials</a></li>
 					<!-- <li><a href="testimonialsLink" class="nav-item w3-padding-small w3-cell menuColor testimonialsLink">testimonials</a></li> -->
 					<li><a href="#contact" uk-scroll>contact</a></li>
 				</ul>
@@ -53,6 +54,7 @@
 							<ul class="uk-nav uk-navbar-dropdown-nav mobile-menu">
 								<li class="uk-dark"><a href="#about" uk-scroll>about</a></li>
 								<li><a href="#work" uk-scroll>work</a></li>
+								<li><a href="#testimonials" uk-scroll>testimonials</a></li>
 								<!-- <li><a href="testimonialsLink" class="nav-item w3-padding-small w3-cell menuColor testimonialsLink">testimonials</a></li> -->
 								<li><a href="#contact" uk-scroll>contact</a></li>
 							</ul>
@@ -71,7 +73,7 @@
 		<!-- <h2 class="uk-text-center">About</h2> -->
 		<div class="uk-container uk-container-small">
 			<p class="">Welcome to Bergstrom Web Designs. I specialize in custom web design and responsive development. That means the website I make for your business is one of a kind and it will look great on any desktop, tablet, or smartphone.</p>
-			<p class="uk-text">Do you need a new or redesigned website? I create websites that work and get your business more customers. <a href="#contact" uk-scroll>Contact</a> me today for a creative solution and a quote.</p>
+			<p class="">Do you need a new or redesigned website? I create websites that work and get your business more customers. <a href="#contact" uk-scroll>Contact</a> me today for a creative solution and a quote.</p>
 		</div>
 	</div>
 	<!-- Work -->
@@ -83,9 +85,19 @@
 					<li>
 						<div class="uk-card uk-card-default">
 							<div class="uk-card-media-top">
+								<a href="https://mannythemovieguy.com/" target="_blank"><img src="images/mannythemovieguy.png" title="Manny the Movie Guy" alt="Manny the Movie Guy" /></a>
+							</div>
+							<div class="uk-card-footer">
+								<h3 class="uk-card-title uk-text-center"><a href="https://mannythemovieguy.com/" target="_blank">Manny the Movie Guy</a></h3>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="uk-card uk-card-default">
+							<div class="uk-card-media-top">
 								<a href="http://wifibycv.com" target="_blank"><img src="images/wifiby.png" title="WifiBy Coachella Valley" alt="WifiBy Coachella Valley" /></a>
 							</div>
-							<div class="uk-card-body">
+							<div class="uk-card-footer">
 								<h3 class="uk-card-title uk-text-center"><a href="http://wifibycv.com" target="_blank">WifiBy Coachella Valley</a></h3>
 							</div>
 						</div>
@@ -95,7 +107,7 @@
 							<div class="uk-card-media-top">
 								<a href="http://brandonmyersphotography.com" target="_blank"><img src="images/brandonMyers.png" title="Brandon Myers Photography" alt="Brandon Myers Photography" /></a>
 							</div>
-							<div class="uk-card-body">
+							<div class="uk-card-footer">
 								<h3 class="uk-card-title uk-text-center"><a href="http://brandonmyersphotography.com" target="_blank">Brandon Myers Photography</a></h3>
 							</div>
 						</div>
@@ -115,9 +127,39 @@
 			</div> -->
 	</div>
 	<!-- testimonials -->
+	<div id="testimonials" class="uk-section">
+		<h2 class="uk-text-center">Testimonials</h2>
+		<div uk-slider="center: true">
+			<div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+				<ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+					<li>
+						<div class="uk-card uk-card-default">
+							<div class="uk-card-header">
+								<div class="uk-grid-small uk-flex-middle" uk-grid>
+									<div class="uk-width-auto">
+										<img class="uk-border-circle" width="40" height="40" src="images/mannythemovieguyavatar.jpg">
+									</div>
+									<div class="uk-width-expand">
+										<h3 class="uk-card-title uk-margin-remove-bottom">Manny the Movie Guy</h3>
+										<p class="uk-text-meta uk-margin-remove-top"><time datetime="2020-08-16T19:00">August 16, 2020</time></p>
+									</div>
+								</div>
+							</div>
+							<div class="uk-card-body">
+								<p>Bergstrom Web Designs dramatically improved my website! Their level of understanding is bar none and their customer service is par excellence! And the best part? Their knowledge of web design and how it reflects your business needs and goals! I have nothing but great things to say about Bergstrom Web Designs! They get 4 💋💋💋💋</p>
+							</div>
+							<div class="uk-card-footer">
+								<a href="https://mannythemovieguy.com/" class="uk-button uk-button-text">mannythemovieguy.com</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	<!-- contact -->
 	<div id="contact" class="uk-section">
-		<h2 class="uk-text-center">Contact</h2>
+		<h2 class="uk-text-center">Get in Touch</h2>
 		<div class="uk-container uk-container-small">
 			<form method="POST" action="php/mail.php" class="form">
 				<div class="uk-margin">
